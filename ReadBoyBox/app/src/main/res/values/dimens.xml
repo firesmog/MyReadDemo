@@ -1,9 +1,12 @@
 <resources>
     <!--dimens  dp专属-->
+    <dimen name="dimens_dp_0">0dp</dimen>
+    <dimen name="dimens_dp_5">5dp</dimen>
     <dimen name="dimens_dp_10">10dp</dimen>
     <dimen name="dimens_dp_16">16dp</dimen>
     <dimen name="dimens_dp_17">17dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="dimens_dp_50">50dp</dimen>
+    <dimen name="dimens_dp_60">60dp</dimen>
 
 
 

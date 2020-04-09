@@ -32,24 +32,27 @@
             android:textSize="@dimen/dimens_sp_13"/>
     </RelativeLayout>
 
-    <androidx.viewpager.widget.ViewPager
+    <com.read.dream.readboybox.util.CustomViewPager
         android:id="@+id/vp_main"
         android:layout_below="@id/rl_main_account"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="@dimen/dimens_dp_10">
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tl_main_below"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:tabBackground="@android:color/white"
-            app:tabIndicatorColor="@android:color/holo_red_light"
-            app:tabIndicatorHeight="2dp"
-            app:tabMode="scrollable"
-            app:tabSelectedTextColor="@android:color/holo_red_light"
-            app:tabTextColor="@android:color/darker_gray"/>
-    </androidx.viewpager.widget.ViewPager>
+    </com.read.dream.readboybox.util.CustomViewPager>
 
-
-
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tl_main_below"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:paddingBottom="@dimen/dimens_dp_10"
+        app:tabIndicatorHeight="@dimen/dimens_dp_0"
+        app:tabIndicatorFullWidth="false"
+        app:tabMaxWidth="0dp"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        android:layout_alignParentBottom="true"
+        app:tabRippleColor="@android:color/transparent"
+        app:tabSelectedTextColor="@android:color/black"
+        app:tabTextColor="@android:color/darker_gray"/>
 </RelativeLayout>

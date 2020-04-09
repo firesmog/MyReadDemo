@@ -1,4 +1,25 @@
 <resources>
     <string name="app_name">ReadBoyBox</string>
     <string name="string_main_id">未命名</string>
+    <string name="string_main_detail">详情</string>
+    <string name="string_main_time">守护时间</string>
+    <string name="string_main_app">守护应用</string>
+    <string name="string_main_mine">我的</string>
+
+    <string-array name="array_main_string">
+        <item>详情</item>
+        <item>守护时间</item>
+        <item>守护应用</item>
+        <item>我的</item>
+    </string-array>
+
+    <string-array name="array_app_manager">
+        <item>限时可用</item>
+        <item>禁止可用</item>
+        <item>自由可用</item>
+    </string-array>
+
+    <string name="string_limit_time">限时可用</string>
+    <string name="string_forbid_use">禁止可用</string>
+    <string name="string_free_use">自由可用</string>
 </resources>

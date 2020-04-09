@@ -1,4 +1,4 @@
-package com.read.dream.readboybox.fragment;
+package com.read.dream.readboybox.fragment.appmanager;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,15 +10,16 @@ import androidx.fragment.app.Fragment;
 
 import com.read.dream.readboybox.R;
 
-public class HomeFragment extends Fragment {
+
+public class ForbideUseFragment extends Fragment {
     private String mFrom;
 
-    public HomeFragment() {
+    public ForbideUseFragment() {
         // Required empty public constructor
     }
 
     public static Fragment newInstance(String from){
-        HomeFragment homeFragment = new HomeFragment();
+        ForbideUseFragment homeFragment = new ForbideUseFragment();
         Bundle bundle = new Bundle();
         bundle.putString("from",from);
         homeFragment.setArguments(bundle);
@@ -36,10 +37,7 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_home, container, false);
-
-        return view;
+        return inflater.inflate(R.layout.fragment_app_manager, container, false);
     }
 
 }
