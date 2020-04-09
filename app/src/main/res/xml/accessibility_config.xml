@@ -5,5 +5,4 @@
     android:canRetrieveWindowContent="true"
     android:description="@string/accessibility_desc"
     android:accessibilityFlags="flagReportViewIds"
-    android:packageNames="com.android.settings,com.example.mydemo,com.android.packageinstaller"
     android:notificationTimeout="1000" />

@@ -66,13 +66,14 @@ public class AccessibilitySampleService extends AccessibilityService {
         AccessibilityLog.printLog( "pkgName == " + event.getPackageName() + ",event111" + event.toString());
 
         //todo 此处防止卸载存在一定的延迟
-        if("com.android.packageinstaller".equals(pkgName)){
+        if("com.android.packageinstaller".equals(pkgName)
+        || "com.android.systemui".equals(pkgName)){
             //WindowUtils.showPopupWindow(AccessibilitySampleService.this);
             before = System.currentTimeMillis();
             dealStopUninstall();
         }
 
-        switch (eventType) {
+        /*switch (eventType) {
             case AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED:
             case AccessibilityEvent.TYPE_WINDOWS_CHANGED:
                 AccessibilityNodeInfo source = event.getSource();
@@ -122,7 +123,7 @@ public class AccessibilitySampleService extends AccessibilityService {
                     }
 
                     break;
-        }
+        }*/
     }
 
 
@@ -187,9 +188,13 @@ public class AccessibilitySampleService extends AccessibilityService {
         AccessibilityNodeInfo source = getRootInActiveWindow();
         List<AccessibilityNodeInfo> nextInfos = source.findAccessibilityNodeInfosByText("MyDemo");
         List<AccessibilityNodeInfo> nextInfoCancel = source.findAccessibilityNodeInfosByText("取消");
+        AccessibilityLog.printLog("child className333 = dealStopUninstall"  + nextInfoCancel.size());
+
 
         if (nextInfos  != null && nextInfos .size() > 0 && nextInfoCancel != null && nextInfoCancel.size() > 0) {
             boolean result = nextInfoCancel.get(0).performAction(AccessibilityNodeInfo.ACTION_CLICK);
+            AccessibilityLog.printLog("child className222 = dealStopUninstall"  + result);
+
         }
     }
 

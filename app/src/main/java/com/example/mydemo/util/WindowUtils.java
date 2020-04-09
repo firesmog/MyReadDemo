@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.PixelFormat;
 import android.graphics.Rect;
+import android.net.Uri;
 import android.os.Build;
 import android.provider.Settings;
 import android.util.Log;
@@ -53,9 +54,11 @@ public class WindowUtils {
         final WindowManager.LayoutParams params = new WindowManager.LayoutParams();
 
         // 类型
-        params.type =  WindowManager.LayoutParams.TYPE_SYSTEM_ALERT;
-
-
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){//6.0
+            params.type = WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY;
+        }else {
+            params.type =  WindowManager.LayoutParams.TYPE_SYSTEM_ALERT;
+        }
         // WindowManager.LayoutParams.TYPE_SYSTEM_ALERT
 
         // 设置flag
@@ -75,7 +78,19 @@ public class WindowUtils {
 
         params.gravity = Gravity.CENTER;
 
+
+        if (Build.VERSION.SDK_INT >= 23)
+        {
+    if(!Settings.canDrawOverlays(mContext)) {
+        Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION);
+        mContext.startActivity(intent);
+        return;
+    } else {
         mWindowManager.addView(mView, params);
+    }
+        } else {
+            mWindowManager.addView(mView, params);
+        }
 
         Log.i(LOG_TAG, "add view");
 

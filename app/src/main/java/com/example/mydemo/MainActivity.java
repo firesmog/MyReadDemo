@@ -57,7 +57,10 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mVrvDeviceAdmin = new ComponentName(this, VrvDeviceAdminReceiver.class);
-        initView();
+        //initView();
+        Intent intent  = new Intent(MainActivity.this, InterceptAppService.class);
+        startService(intent);
+
         //startActivity(new Intent(MainActivity.this, MyTestDemoActivity.class));
     }
 

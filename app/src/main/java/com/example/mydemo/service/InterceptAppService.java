@@ -77,10 +77,12 @@ public class InterceptAppService extends Service {
     public int onStartCommand(final Intent intent, int flags, int startId) {
         // 设置为前台进程，降低oom_adj，提高进程优先级，提高存活机率
         setForeground();
-        initData();
+        //initData();
         //只能hook住当前应用自己的startActivity
         //GlobalActivityHookHelper.hook();
         //开始循环检查
+        handlerThread = new HandlerThread("count_thread");
+        handlerThread.start();
         mHandler = new Handler(handlerThread.getLooper()) {
             public void dispatchMessage(android.os.Message msg) {
                 switch (msg.what) {
@@ -254,6 +256,11 @@ public class InterceptAppService extends Service {
             // 获取最近运行的任务栈中的栈顶Activity(即用户当前操作的activity)的包名
             packageName = mActivityManager.getRunningTasks(1).get(0).topActivity.getPackageName();
 
+        }
+        Log.d(TAG,"com.android.launcher111 + pkgName ="  +  packageName);
+
+        if(TextUtils.isEmpty(packageName) || !TextUtils.isEmpty(packageName) && packageName.equals("com.android.launcher3")){
+            return true;
         }
 
         if(null != appList){
