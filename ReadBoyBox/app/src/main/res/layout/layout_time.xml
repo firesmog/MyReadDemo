@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
     android:background="#f7f7f7"
     android:layout_width="match_parent"
+    android:layout_gravity="center"
     android:layout_height="wrap_content">
 
     <com.read.dream.readboybox.widget.time.HourPicker
@@ -11,18 +12,35 @@
         app:halfVisibleItemCount="2"
         app:indicatorText="@string/string_big_hour"
         app:wheelCyclic="true"
-        app:indicatorTextSize="12sp"
-        android:layout_weight="1"
-        android:layout_width="0dp"
+        app:indicatorTextSize="@dimen/dimens_sp_12"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_year"
+        android:layout_toEndOf="@id/hourPicker_layout_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/string_china_hour"
+        android:textSize="@dimen/dimens_sp_20"/>
+
     <com.read.dream.readboybox.widget.date.DatePickerMinutePicker
         android:id="@+id/minutePicker_layout_time"
         app:wheelCyclic="true"
-        app:indicatorText="@string/ycuwq_datepicker_minute"
-        app:indicatorTextSize="12sp"
+        app:indicatorText="@string/string_big_minute"
+        app:indicatorTextSize="@dimen/dimens_sp_12"
         app:halfVisibleItemCount="2"
-        android:layout_weight="1"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/tv_minute"
+        android:layout_toEndOf="@id/minutePicker_layout_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/string_china_hour"
+        android:textSize="@dimen/dimens_sp_20"/>
+
+</RelativeLayout>

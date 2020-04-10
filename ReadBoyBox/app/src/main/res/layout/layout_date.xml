@@ -4,6 +4,7 @@
     android:orientation="horizontal"
     android:background="#f7f7f7"
     android:layout_width="match_parent"
+    android:gravity="center"
     android:layout_height="wrap_content">
 
     <com.read.dream.readboybox.widget.date.YearPicker
@@ -15,11 +16,10 @@
     <TextView
         android:id="@+id/tv_year"
         android:layout_toEndOf="@id/yearPicker_layout_date"
-        android:layout_toRightOf="@id/yearPicker_layout_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:text="年"
+        android:text="@string/string_china_year"
         android:textSize="20sp"/>
 
     <com.read.dream.readboybox.widget.date.MonthPicker
@@ -27,22 +27,20 @@
         app:halfVisibleItemCount="2"
         android:layout_width="wrap_content"
         android:layout_toEndOf="@id/tv_year"
-        android:layout_toRightOf="@id/tv_year"
         android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/tv_month"
         android:layout_toEndOf="@id/monthPicker_layout_date"
-        android:layout_toRightOf="@id/monthPicker_layout_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:text="月"
-        android:textSize="20sp"/>
+        android:text="@string/string_china_month"
+        android:textSize="@dimen/dimens_sp_20"/>
 
     <com.read.dream.readboybox.widget.date.DayPicker
+        android:layout_toEndOf="@id/tv_month"
         android:id="@+id/dayPicker_layout_date"
-        android:layout_toRightOf="@id/tv_month"
         app:halfVisibleItemCount="2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
@@ -50,10 +48,9 @@
     <TextView
         android:id="@+id/tv_day"
         android:layout_toEndOf="@id/dayPicker_layout_date"
-        android:layout_toRightOf="@id/dayPicker_layout_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:text="日"
-        android:textSize="20sp"/>
+        android:text="@string/string_china_day"
+        android:textSize="@dimen/dimens_sp_20"/>
 </RelativeLayout>

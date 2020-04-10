@@ -27,4 +27,9 @@
     <string name="sting_decide">Decide</string>
     <string name="string_big_hour">H</string>
     <string name="string_big_minute">M</string>
+    <string name="string_china_year">年</string>
+    <string name="string_china_month">月</string>
+    <string name="string_china_day">日</string>
+    <string name="string_china_hour">时</string>
+    <string name="string_china_minute">分</string>
 </resources>
