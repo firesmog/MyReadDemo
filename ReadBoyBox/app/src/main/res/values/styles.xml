@@ -4,9 +4,9 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="android:windowNoTitle">true</item>
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/color_6200EE</item>
+        <item name="colorPrimaryDark">@color/color_3700B3</item>
+        <item name="colorAccent">@color/color_03DAC5</item>
     </style>
 
 
@@ -31,7 +31,7 @@
         <item name="android:backgroundDimEnabled">false</item>
     </style>
     <style name="DatePickerDialogAnim" mce_bogus="1" parent="android:Animation">
-        <item name="android:windowEnterAnimation">@anim/com_ycuwq_datepicker_dialog_in</item>
-        <item name="android:windowExitAnimation">@anim/com_ycuwq_datepicker_dialog_out</item>
+        <item name="android:windowEnterAnimation">@anim/anim_datapicker_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_datapicker_dialog_out</item>
     </style>
 </resources>

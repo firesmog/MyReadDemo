@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="color_6200EE">#6200EE</color>
+    <color name="color_3700B3">#3700B3</color>
+    <color name="color_03DAC5">#03DAC5</color>
 
-    <color name="com_ycuwq_datepicker_selectedTextColor">#33aaff</color>
-    <color name="com_ycuwq_datepicker_divider">#cccccc</color>
+    <color name="color_33aaff">#33aaff</color>
+    <color name="color_cccccc">#cccccc</color>
 </resources>

@@ -44,7 +44,7 @@
         android:id="@+id/tl_main_below"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+        android:background="@color/color_6200EE"
         android:paddingBottom="@dimen/dimens_dp_10"
         app:tabIndicatorHeight="@dimen/dimens_dp_0"
         app:tabIndicatorFullWidth="false"

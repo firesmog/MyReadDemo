@@ -2,11 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content">
-    <com.ycuwq.datepicker.date.DatePicker
+    <com.read.dream.readboybox.widget.date.DatePicker
         android:id="@+id/dayPicker_dialog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    </com.ycuwq.datepicker.date.DatePicker>
+    </com.read.dream.readboybox.widget.date.DatePicker>
 
     <LinearLayout
         android:orientation="horizontal"
@@ -16,21 +16,21 @@
             android:padding="16dp"
             android:id="@+id/btn_dialog_date_cancel"
             android:background="#f7f7f7"
-            android:text="@string/ycuwq_datepicker_cancel"
-            android:textColor="@color/com_ycuwq_datepicker_selectedTextColor"
+            android:text="@string/string_cancel"
+            android:textColor="@color/color_33aaff"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
         <ImageView
-            android:background="@color/com_ycuwq_datepicker_divider"
+            android:background="@color/color_cccccc"
             android:layout_width="1px"
             android:layout_height="match_parent" />
         <Button
             android:padding="16dp"
             android:id="@+id/btn_dialog_date_decide"
             android:background="#f7f7f7"
-            android:text="@string/ycuwq_datepicker_decide"
-            android:textColor="@color/com_ycuwq_datepicker_selectedTextColor"
+            android:text="@string/sting_decide"
+            android:textColor="@color/color_33aaff"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />

@@ -1,13 +1,25 @@
 <resources>
     <!--dimens  dp专属-->
     <dimen name="dimens_dp_0">0dp</dimen>
+    <dimen name="dimens_dp_2">2dp</dimen>
+    <dimen name="dimens_dp_3">3dp</dimen>
+    <dimen name="dimens_dp_4">4dp</dimen>
     <dimen name="dimens_dp_5">5dp</dimen>
+    <dimen name="dimens_dp_6">6dp</dimen>
+    <dimen name="dimens_dp_7">7dp</dimen>
+    <dimen name="dimens_dp_8">8dp</dimen>
+    <dimen name="dimens_dp_9">9dp</dimen>
     <dimen name="dimens_dp_10">10dp</dimen>
+    <dimen name="dimens_dp_11">11dp</dimen>
+    <dimen name="dimens_dp_12">12dp</dimen>
+    <dimen name="dimens_dp_13">13dp</dimen>
+    <dimen name="dimens_dp_14">14dp</dimen>
+    <dimen name="dimens_dp_15">15dp</dimen>
     <dimen name="dimens_dp_16">16dp</dimen>
     <dimen name="dimens_dp_17">17dp</dimen>
+    <dimen name="dimens_dp_32">32dp</dimen>
     <dimen name="dimens_dp_50">50dp</dimen>
     <dimen name="dimens_dp_60">60dp</dimen>
-
 
 
 
@@ -49,13 +61,7 @@
 
 
     <!--other demo resource-->
-    <dimen name="WheelItemTextSize">14sp</dimen>
-    <dimen name="WheelSelectedItemTextSize">20sp</dimen>
-    <dimen name="WheelItemSpace">12dp</dimen>
-    <dimen name="WheelIndicatorSize">2dp</dimen>
-    <dimen name="WheelMargins">8dp</dimen>
-    <dimen name="WheelItemHeightSpace">16dp</dimen>
-    <dimen name="WheelItemWidthSpace">32dp</dimen>
+
 
 
 </resources>

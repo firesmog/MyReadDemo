@@ -3,7 +3,8 @@ package com.read.dream.readboybox.widget.time;
 import android.content.Context;
 import android.util.AttributeSet;
 
-import com.ycuwq.datepicker.WheelPicker;
+
+import com.read.dream.readboybox.widget.WheelPicker;
 
 import java.text.NumberFormat;
 import java.util.ArrayList;
@@ -13,7 +14,7 @@ import java.util.List;
  * HourPicker
  * Created by ycuwq on 2018/1/22.
  */
-public class HourPicker extends WheelPicker<Integer>{
+public class HourPicker extends WheelPicker<Integer> {
 
     private OnHourSelectedListener mOnHourSelectedListener;
 

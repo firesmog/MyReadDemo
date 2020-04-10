@@ -6,7 +6,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -82,7 +81,7 @@ public class AppManagerFragment extends Fragment {
                 recoverItem();
                 View view =tab.getCustomView();
                 TextView textView = view.findViewById(R.id.tab_content_text);
-                textView.setTextColor(getResources().getColor(R.color.colorAccent));
+                textView.setTextColor(getResources().getColor(R.color.color_03DAC5));
 
             }
 
@@ -109,7 +108,7 @@ public class AppManagerFragment extends Fragment {
             return;
         }
         TextView textView = view.findViewById(R.id.tab_content_text);
-        textView.setTextColor(getResources().getColor(R.color.colorAccent));
+        textView.setTextColor(getResources().getColor(R.color.color_03DAC5));
     }
 
     /**
