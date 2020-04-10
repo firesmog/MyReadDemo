@@ -22,4 +22,9 @@
     <string name="string_limit_time">限时可用</string>
     <string name="string_forbid_use">禁止可用</string>
     <string name="string_free_use">自由可用</string>
+
+    <string name="ycuwq_datepicker_cancel">Cancel</string>
+    <string name="ycuwq_datepicker_decide">Decide</string>
+    <string name="ycuwq_datepicker_hour">H</string>
+    <string name="ycuwq_datepicker_minute">m</string>
 </resources>
