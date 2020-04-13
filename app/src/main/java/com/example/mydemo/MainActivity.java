@@ -60,9 +60,9 @@ public class MainActivity extends Activity {
         mVrvDeviceAdmin = new ComponentName(this, VrvDeviceAdminReceiver.class);
         //initView();
         Intent intent  = new Intent(MainActivity.this, InterceptAppService.class);
-        startService(intent);
+       // startService(intent);
 
-        //startActivity(new Intent(MainActivity.this, MyTestDemoActivity.class));
+        startActivity(new Intent(MainActivity.this, MyTestDemoActivity.class));
     }
 
     private void initView(){

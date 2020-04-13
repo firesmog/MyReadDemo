@@ -25,4 +25,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+
+    <com.read.dream.readboybox.widget.timeSelect.TimeSelectorView
+        android:id="@+id/tsvTimeSelector"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </LinearLayout>

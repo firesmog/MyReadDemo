@@ -3,6 +3,7 @@ package com.read.dream.readboybox.activity;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -11,8 +12,13 @@ import android.widget.Toast;
 import com.read.dream.readboybox.R;
 import com.read.dream.readboybox.widget.date.DatePicker;
 import com.read.dream.readboybox.widget.date.DatePickerDialogFragment;
+import com.read.dream.readboybox.widget.timeSelect.TimeSelectorView;
+
+import java.util.List;
 
 public class DataPickSimpleActivity extends AppCompatActivity {
+
+    private TimeSelectorView tsvTimeSelector;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +44,15 @@ public class DataPickSimpleActivity extends AppCompatActivity {
             @Override
             public void onDateSelected(int year, int month, int day) {
                 dateTv.setText(year + "-" + month + "-" + day);
+            }
+        });
+
+        this.tsvTimeSelector = (TimeSelectorView) findViewById(R.id.tsvTimeSelector);
+
+        tsvTimeSelector.setOnChangeTimeListener(new TimeSelectorView.OnChangeTimeListener() {
+            @Override
+            public void onChangeTime(boolean isSelect, List<Integer> seletedList) {
+                Log.e("xxx", "当前是选中？：" + isSelect + "    集合中选中的有：" + seletedList.toString());
             }
         });
     }

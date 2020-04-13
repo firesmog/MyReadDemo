@@ -43,8 +43,8 @@ public class MinutePicker extends WheelPicker<Integer> {
 
     private void updateMinute() {
         List<Integer> list = new ArrayList<>();
-        for (int i = 0; i < 60; i++) {
-            list.add(i);
+        for (int i = 0; i < 6; i++) {
+            list.add(i * 10);
         }
         setDataList(list);
     }
